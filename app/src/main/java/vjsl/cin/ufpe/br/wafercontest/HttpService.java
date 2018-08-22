@@ -34,10 +34,9 @@ public class HttpService extends AsyncTask<Void, Void, Country[]>{
 
             Scanner in = new Scanner(url.openStream());
             while(in.hasNext()){
-                json.append(in.next());
+                json.append(in.nextLine());
             }
-            System.out.println("");
-
+            connector.disconnect();
 
         }catch (MalformedURLException e){
             Toast.makeText(null, "Can't connect to the repository", Toast.LENGTH_LONG).show();
