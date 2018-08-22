@@ -1,1 +1,1 @@
-#Repository for Wafer Contest on Vanhack
+# Repository for Wafer Contest on Vanhack
